@@ -4,8 +4,8 @@ import { connect } from "react-redux";
 import ListItem from "./ListItem";
 
 class LibraryList extends Component {
-  renderItem(library) {
-    return <ListItem library={library} />;
+  renderItem({ item }) {
+    return <ListItem library={item} />;
   }
   render() {
     return (
